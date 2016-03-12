@@ -1,0 +1,76 @@
+BUILD: Computing Include file dependencies:
+BUILD: Examining e:\work\dc112x\mjpg2rgb directory for files to compile.
+Compiling (NoSync) e:\work\dc112x\mjpg2rgb directory ********************
+'nmake.exe /nologo BUILDMSG=Stop. -i NTTEST= UMTEST= NOLINK=1 NOPASS0=1 386=1'
+cl -nologo -Ii386\ -I. -ID:\WINDDK\3790~1.183\inc\mfc42 -ID:\WINDDK\3790~1.183\inc\ddk\wxp -ID:\WINDDK\3790~1.183\inc\ddk\wxp\wdm -Iobjfre_wxp_x86\i386 -ID:\WINDDK\3790~1.183\inc\wxp -ID:\WINDDK\3790~1.183\inc\wxp -ID:\WINDDK\3790~1.183\inc\ddk\wdm\wxp -ID:\WINDDK\3790~1.183\inc\crt -D_X86_=1 -Di386=1  -DSTD_CALL -DCONDITION_HANDLING=1   -DNT_INST=0 -DWIN32=100 -D_NT1X_=100 -DWINNT=1 -D_WIN32_WINNT=0x0501 /DWINVER=0x0501 -D_WIN32_IE=0x0603    -DWIN32_LEAN_AND_MEAN=1 -DDEVL=1 -D__BUILDMACHINE__=WinDDK -DFPO=0  -DNDEBUG -D_DLL=1      /c /Zl /Zp8 /Gy /Gm- -cbstring /W3 /WX /Gz  /GX-  /GR- /GF /GS /G6 /Ze /Gi- /QIfdiv- /hotpatch -Z7 /Oxs  /Oy-   -FID:\WINDDK\3790~1.183\inc\wxp\warning.h     .\djpg_marker_parser.cpp .\djpg_decoder.cpp .\djpg_decoder_init.cpp .\djpg_format_convert.cpp .\djpg_format_convert_mmx.cpp .\djpg_idct.cpp .\djpg_idct_mmx.cpp 
+djpg_marker_parser.cpp
+djpg_decoder.cpp
+djpg_decoder_init.cpp
+djpg_format_convert.cpp
+djpg_format_convert_mmx.cpp
+djpg_idct.cpp
+djpg_idct_mmx.cpp
+Generating Code...
+	lib -out:Obj\i386\StkCDJpg.lib @C:\DOCUME~1\DENNY_~1\LOCALS~1\Temp\nm697.tmp
+Microsoft (R) Library Manager Version 7.10.4035
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 
+/WX 
+-nodefaultlib 
+-machine:ix86 
+-def:DJpg.def 
+objfre_wxp_x86\i386\djpg_marker_parser.obj objfre_wxp_x86\i386\djpg_decoder.obj objfre_wxp_x86\i386\djpg_decoder_init.obj objfre_wxp_x86\i386\djpg_format_convert.obj objfre_wxp_x86\i386\djpg_format_convert_mmx.obj objfre_wxp_x86\i386\djpg_idct.obj objfre_wxp_x86\i386\djpg_idct_mmx.obj 
+   Creating library Obj\i386\StkCDJpg.lib and object Obj\i386\StkCDJpg.exp
+
+Stop.
+Linking e:\work\dc112x\mjpg2rgb directory ********************
+'nmake.exe /nologo BUILDMSG=Stop. -i LINKONLY=1 NOPASS0=1 NTTEST= UMTEST= MAKEDLL=1 386=1'
+	link -out:Obj\i386\StkCDJpg.sys -machine:ix86 @C:\DOCUME~1\DENNY_~1\LOCALS~1\Temp\nm698.tmp
+Microsoft (R) Incremental Linker Version 7.10.4035
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-MERGE:_PAGE=PAGE 
+-MERGE:_TEXT=.text 
+-SECTION:INIT,d 
+-OPT:REF 
+-OPT:ICF 
+-IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 
+-INCREMENTAL:NO 
+-FULLBUILD 
+/release 
+-NODEFAULTLIB 
+/WX 
+-debug 
+-debugtype:cv 
+-version:5.1 
+-osversion:5.1 
+/functionpadmin:5 
+/safeseh 
+/pdbcompress 
+-STACK:0x40000,0x1000 
+-driver -driver:wdm 
+-align:0x80 /stub:D:\WINDDK\3790~1.183\lib\wxp\stub512.com 
+-subsystem:native,1.10 
+-base:0x10000 
+-entry:GsDriverEntry@8 
+-out:Obj\i386\StkCDJpg.sys 
+Obj\i386\StkCDJpg.exp 
+objfre_wxp_x86\i386\djpg_marker_parser.obj 
+objfre_wxp_x86\i386\djpg_decoder.obj 
+objfre_wxp_x86\i386\djpg_decoder_init.obj 
+objfre_wxp_x86\i386\djpg_format_convert.obj 
+objfre_wxp_x86\i386\djpg_format_convert_mmx.obj 
+objfre_wxp_x86\i386\djpg_idct.obj 
+objfre_wxp_x86\i386\djpg_idct_mmx.obj 
+D:\WINDDK\3790~1.183\lib\wxp\i386\BufferOverflowK.lib 
+D:\WINDDK\3790~1.183\lib\wxp\i386\wdm.lib 
+D:\WINDDK\3790~1.183\lib\wxp\i386\wdm.lib 
+D:\WINDDK\3790~1.183\lib\wxp\i386\stream.lib 
+D:\WINDDK\3790~1.183\lib\wxp\i386\ksguid.lib 
+D:\WINDDK\3790~1.183\lib\wxp\i386\libc.lib 
+D:\WINDDK\3790~1.183\lib\wxp\i386\sehupd.lib 
+	echo Skip Binplace:
+Skip Binplace:
+
+Stop.

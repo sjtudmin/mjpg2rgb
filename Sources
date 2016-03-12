@@ -1,0 +1,30 @@
+TARGETNAME=StkCDJpg
+TARGETTYPE=EXPORT_DRIVER
+DRIVERTYPE=WDM
+TARGETPATH=Obj
+
+DLLDEF=DJpg.def
+
+USE_MAPSYM=1
+
+INCLUDES=\
+            $(DDK_INC_PATH); \
+            $(DDK_INC_PATH)\wdm; \
+            
+            
+TARGETLIBS=\
+	$(DDK_LIB_PATH)\wdm.lib \
+	$(DDK_LIB_PATH)\stream.lib \
+	$(DDK_LIB_PATH)\ksguid.lib \
+	$(DDK_LIB_PATH)\libc.lib \
+
+
+SOURCES=\
+	DJpg_Marker_Parser.cpp	\
+	DJpg_Decoder.cpp	\
+	DJpg_Decoder_Init.cpp		\
+	DJpg_Format_Convert.cpp	\
+	DJpg_Format_Convert_MMX.cpp		\
+	DJpg_Idct.cpp	\
+	DJpg_Idct_MMX.cpp
+
